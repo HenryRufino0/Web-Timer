@@ -1,0 +1,175 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #f8f9fa;
+  --text: #212529;
+  --card: #ffffff;
+  --btn-bg: #0d6efd;
+  --btn-text: #fff;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --bg: #121212;
+  --text: #f8f9fa;
+  --card: #1e1e1e;
+  --btn-bg: #343a40;
+  --btn-text: #fff;
+  --shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.timer {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.controls button,
+#save-container button,
+#toggle-theme {
+  padding: 12px 24px;
+  margin: 5px;
+  border: none;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#save-container {
+  margin-top: 20px;
+}
+
+#save-container input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 70%;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.saved-timers {
+  margin-top: 30px;
+}
+
+.saved-timers h2 {
+  margin-bottom: 10px;
+}
+
+.saved-timers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.saved-timers li {
+  background: rgba(0,0,0,0.03);
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+.saved-timers li:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.saved-timers button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  color: red;
+  cursor: pointer;
+}
+
+.theme-picker {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #333;
+  transition: transform 0.2s;
+}
+
+.color-circle:hover {
+  transform: scale(1.2);
+}
+
+.blue {
+  --bg: #cce5ff;
+  --text: #003366;
+  --card: #e6f2ff;
+  --btn-bg: #007bff;
+  --btn-text: #fff;
+}
+
+.green {
+  --bg: #d4edda;
+  --text: #155724;
+  --card: #e2f0e9;
+  --btn-bg: #28a745;
+  --btn-text: #fff;
+}
+
+.pink {
+  --bg: #fce4ec;
+  --text: #880e4f;
+  --card: #f8bbd0;
+  --btn-bg: #e91e63;
+  --btn-text: #fff;
+}
+
+.red {
+  --bg:#f54242;
+  --text:#ffffff;
+  --card:#ff7676;
+  --btn-bg:#be0000;
+  --btn-text:#ffffff;
+
+}

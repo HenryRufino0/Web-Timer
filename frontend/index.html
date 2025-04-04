@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Timer Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>⏱️ Timer Online</h1>
+    <div class="timer" id="timer">00:00</div>
+
+    <div class="controls">
+      <button id="start">Iniciar</button>
+      <button id="pause">Pausar</button>
+      <button id="reset">Resetar</button>
+    </div>
+
+    <div id="save-container" class="save-container hidden">
+      <p>Deseja salvar este timer?</p>
+      <input type="text" id="label" placeholder="Nome do timer" />
+      <button id="save">Salvar</button>
+      <button id="discard">Descartar</button>
+    </div>
+
+    <div class="saved-timers">
+      <h2>Timers Salvos</h2>
+      <ul id="timer-list"></ul>
+    </div>
+
+    <button id="toggle-theme">Alterar Tema</button>
+
+    <!-- Bolinhas escondidas inicialmente -->
+    <div id="theme-picker" class="theme-picker hidden">
+      <div class="color-circle" data-theme="light" style="background-color: #f8f9fa;"></div>
+      <div class="color-circle" data-theme="dark" style="background-color: #121212;"></div>
+      <div class="color-circle" data-theme="blue" style="background-color: #cce5ff;"></div>
+      <div class="color-circle" data-theme="green" style="background-color: #d4edda;"></div>
+      <div class="color-circle" data-theme="pink" style="background-color: #fce4ec;"></div>
+      <div class="color-circle" data-theme="red" style="background-color: #fb3c3c;"></div>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
