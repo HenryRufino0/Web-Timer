@@ -7,7 +7,9 @@ Você pode **iniciar, pausar, resetar e salvar** contagens, além de **alternar 
 
 ## 📸 Demonstração
 
-![preview](https://user-images.githubusercontent.com/seu-usuario/imagem-exemplo.png)
+![image](https://github.com/user-attachments/assets/6a100fe9-e4c6-44d5-a386-380180d98a40) ![image](https://github.com/user-attachments/assets/d28936ae-ed7d-4965-8902-a924e8495667)
+
+
 
 ---
 
